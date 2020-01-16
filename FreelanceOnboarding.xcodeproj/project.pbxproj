@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -65,16 +65,24 @@
 		44181E8523D0BC82006DDCCC /* FreelanceOnboarding */ = {
 			isa = PBXGroup;
 			children = (
-				44181E8623D0BC82006DDCCC /* AppDelegate.swift */,
-				44181E8823D0BC82006DDCCC /* SceneDelegate.swift */,
 				44181E9A23D0BCF2006DDCCC /* MainTabBarController.swift */,
-				44181E8A23D0BC82006DDCCC /* ViewController.swift */,
-				44181E8C23D0BC82006DDCCC /* Main.storyboard */,
-				44181E8F23D0BC82006DDCCC /* Assets.xcassets */,
-				44181E9123D0BC82006DDCCC /* LaunchScreen.storyboard */,
+				44181E9C23D0D8B2006DDCCC /* ExtraClasses */,
 				44181E9423D0BC82006DDCCC /* Info.plist */,
 			);
 			path = FreelanceOnboarding;
+			sourceTree = "<group>";
+		};
+		44181E9C23D0D8B2006DDCCC /* ExtraClasses */ = {
+			isa = PBXGroup;
+			children = (
+				44181E8623D0BC82006DDCCC /* AppDelegate.swift */,
+				44181E8823D0BC82006DDCCC /* SceneDelegate.swift */,
+				44181E8C23D0BC82006DDCCC /* Main.storyboard */,
+				44181E8A23D0BC82006DDCCC /* ViewController.swift */,
+				44181E9123D0BC82006DDCCC /* LaunchScreen.storyboard */,
+				44181E8F23D0BC82006DDCCC /* Assets.xcassets */,
+			);
+			path = ExtraClasses;
 			sourceTree = "<group>";
 		};
 		C5E8A6912DA3E07D50D2CA2F /* Pods */ = {
@@ -83,7 +91,6 @@
 				85B0984C570D1BA2FAA234EF /* Pods-FreelanceOnboarding.debug.xcconfig */,
 				633720E0E3EB1260DEA5F6C6 /* Pods-FreelanceOnboarding.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
