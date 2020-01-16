@@ -14,6 +14,7 @@
 		44181E9023D0BC82006DDCCC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 44181E8F23D0BC82006DDCCC /* Assets.xcassets */; };
 		44181E9323D0BC82006DDCCC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 44181E9123D0BC82006DDCCC /* LaunchScreen.storyboard */; };
 		44181E9B23D0BCF2006DDCCC /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44181E9A23D0BCF2006DDCCC /* MainTabBarController.swift */; };
+		D09C4C9AFB6BC62115586909 /* Pods_FreelanceOnboarding.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D517AC951044C078B90EA34D /* Pods_FreelanceOnboarding.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,9 @@
 		44181E9223D0BC82006DDCCC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		44181E9423D0BC82006DDCCC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		44181E9A23D0BCF2006DDCCC /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
+		633720E0E3EB1260DEA5F6C6 /* Pods-FreelanceOnboarding.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FreelanceOnboarding.release.xcconfig"; path = "Target Support Files/Pods-FreelanceOnboarding/Pods-FreelanceOnboarding.release.xcconfig"; sourceTree = "<group>"; };
+		85B0984C570D1BA2FAA234EF /* Pods-FreelanceOnboarding.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FreelanceOnboarding.debug.xcconfig"; path = "Target Support Files/Pods-FreelanceOnboarding/Pods-FreelanceOnboarding.debug.xcconfig"; sourceTree = "<group>"; };
+		D517AC951044C078B90EA34D /* Pods_FreelanceOnboarding.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FreelanceOnboarding.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +37,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D09C4C9AFB6BC62115586909 /* Pods_FreelanceOnboarding.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -44,6 +49,8 @@
 			children = (
 				44181E8523D0BC82006DDCCC /* FreelanceOnboarding */,
 				44181E8423D0BC82006DDCCC /* Products */,
+				C5E8A6912DA3E07D50D2CA2F /* Pods */,
+				EEBBEFFB5A1D3A4094878710 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -70,6 +77,24 @@
 			path = FreelanceOnboarding;
 			sourceTree = "<group>";
 		};
+		C5E8A6912DA3E07D50D2CA2F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				85B0984C570D1BA2FAA234EF /* Pods-FreelanceOnboarding.debug.xcconfig */,
+				633720E0E3EB1260DEA5F6C6 /* Pods-FreelanceOnboarding.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		EEBBEFFB5A1D3A4094878710 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D517AC951044C078B90EA34D /* Pods_FreelanceOnboarding.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -77,9 +102,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 44181E9723D0BC82006DDCCC /* Build configuration list for PBXNativeTarget "FreelanceOnboarding" */;
 			buildPhases = (
+				97C77549BFAEA6D6BF70F677 /* [CP] Check Pods Manifest.lock */,
 				44181E7F23D0BC82006DDCCC /* Sources */,
 				44181E8023D0BC82006DDCCC /* Frameworks */,
 				44181E8123D0BC82006DDCCC /* Resources */,
+				66CEE20BDB04694F5DDA48F4 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -135,6 +162,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		66CEE20BDB04694F5DDA48F4 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FreelanceOnboarding/Pods-FreelanceOnboarding-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FreelanceOnboarding/Pods-FreelanceOnboarding-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-FreelanceOnboarding/Pods-FreelanceOnboarding-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		97C77549BFAEA6D6BF70F677 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FreelanceOnboarding-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		44181E7F23D0BC82006DDCCC /* Sources */ = {
@@ -286,6 +355,7 @@
 		};
 		44181E9823D0BC82006DDCCC /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 85B0984C570D1BA2FAA234EF /* Pods-FreelanceOnboarding.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -304,6 +374,7 @@
 		};
 		44181E9923D0BC82006DDCCC /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 633720E0E3EB1260DEA5F6C6 /* Pods-FreelanceOnboarding.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
