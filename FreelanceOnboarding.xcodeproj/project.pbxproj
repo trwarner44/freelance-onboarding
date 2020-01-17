@@ -69,6 +69,7 @@
 		44181E8523D0BC82006DDCCC /* FreelanceOnboarding */ = {
 			isa = PBXGroup;
 			children = (
+				44181E8623D0BC82006DDCCC /* AppDelegate.swift */,
 				44181E9A23D0BCF2006DDCCC /* MainTabBarController.swift */,
 				44181E9D23D0DD7F006DDCCC /* CoupounViewController.swift */,
 				44FB681523D1EE4600758FBC /* LabelView.swift */,
@@ -81,7 +82,6 @@
 		44181E9C23D0D8B2006DDCCC /* ExtraClasses */ = {
 			isa = PBXGroup;
 			children = (
-				44181E8623D0BC82006DDCCC /* AppDelegate.swift */,
 				44181E8823D0BC82006DDCCC /* SceneDelegate.swift */,
 				44181E8C23D0BC82006DDCCC /* Main.storyboard */,
 				44181E8A23D0BC82006DDCCC /* ViewController.swift */,
