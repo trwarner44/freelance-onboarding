@@ -14,7 +14,8 @@
 		44181E9023D0BC82006DDCCC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 44181E8F23D0BC82006DDCCC /* Assets.xcassets */; };
 		44181E9323D0BC82006DDCCC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 44181E9123D0BC82006DDCCC /* LaunchScreen.storyboard */; };
 		44181E9B23D0BCF2006DDCCC /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44181E9A23D0BCF2006DDCCC /* MainTabBarController.swift */; };
-		44181E9E23D0DD7F006DDCCC /* CoupouViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44181E9D23D0DD7F006DDCCC /* CoupouViewController.swift */; };
+		44181E9E23D0DD7F006DDCCC /* CoupounViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44181E9D23D0DD7F006DDCCC /* CoupounViewController.swift */; };
+		44FB681623D1EE4600758FBC /* LabelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44FB681523D1EE4600758FBC /* LabelView.swift */; };
 		D09C4C9AFB6BC62115586909 /* Pods_FreelanceOnboarding.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D517AC951044C078B90EA34D /* Pods_FreelanceOnboarding.framework */; };
 /* End PBXBuildFile section */
 
@@ -28,7 +29,8 @@
 		44181E9223D0BC82006DDCCC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		44181E9423D0BC82006DDCCC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		44181E9A23D0BCF2006DDCCC /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
-		44181E9D23D0DD7F006DDCCC /* CoupouViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoupouViewController.swift; sourceTree = "<group>"; };
+		44181E9D23D0DD7F006DDCCC /* CoupounViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoupounViewController.swift; sourceTree = "<group>"; };
+		44FB681523D1EE4600758FBC /* LabelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabelView.swift; sourceTree = "<group>"; };
 		633720E0E3EB1260DEA5F6C6 /* Pods-FreelanceOnboarding.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FreelanceOnboarding.release.xcconfig"; path = "Target Support Files/Pods-FreelanceOnboarding/Pods-FreelanceOnboarding.release.xcconfig"; sourceTree = "<group>"; };
 		85B0984C570D1BA2FAA234EF /* Pods-FreelanceOnboarding.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FreelanceOnboarding.debug.xcconfig"; path = "Target Support Files/Pods-FreelanceOnboarding/Pods-FreelanceOnboarding.debug.xcconfig"; sourceTree = "<group>"; };
 		D517AC951044C078B90EA34D /* Pods_FreelanceOnboarding.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FreelanceOnboarding.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -68,7 +70,8 @@
 			isa = PBXGroup;
 			children = (
 				44181E9A23D0BCF2006DDCCC /* MainTabBarController.swift */,
-				44181E9D23D0DD7F006DDCCC /* CoupouViewController.swift */,
+				44181E9D23D0DD7F006DDCCC /* CoupounViewController.swift */,
+				44FB681523D1EE4600758FBC /* LabelView.swift */,
 				44181E9C23D0D8B2006DDCCC /* ExtraClasses */,
 				44181E9423D0BC82006DDCCC /* Info.plist */,
 			);
@@ -220,11 +223,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				44181E9E23D0DD7F006DDCCC /* CoupouViewController.swift in Sources */,
+				44181E9E23D0DD7F006DDCCC /* CoupounViewController.swift in Sources */,
 				44181E8B23D0BC82006DDCCC /* ViewController.swift in Sources */,
 				44181E8723D0BC82006DDCCC /* AppDelegate.swift in Sources */,
 				44181E9B23D0BCF2006DDCCC /* MainTabBarController.swift in Sources */,
 				44181E8923D0BC82006DDCCC /* SceneDelegate.swift in Sources */,
+				44FB681623D1EE4600758FBC /* LabelView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

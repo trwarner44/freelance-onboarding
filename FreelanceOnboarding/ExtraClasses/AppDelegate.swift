@@ -8,6 +8,8 @@
 
 import UIKit
 
+let customRed = UIColor(red: 164/255, green: 30/255, blue: 52/255, alpha: 1.0)
+
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
@@ -17,6 +19,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         window?.rootViewController = MainTabBarController()
+        window?.rootViewController = CouponViewController()
         
         return true
     }
