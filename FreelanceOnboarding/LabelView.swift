@@ -12,29 +12,38 @@ class LabelView: UIView {
     
     let descriptionLabel = UILabel()
     let countLabel = UILabel()
-        
+    let imageView = UIImageView()
+    
+    var offset: CGFloat!
+    
     override init(frame: CGRect) {
         super.init(frame: frame)
-        anchorSubviews()
+        //        anchorSubviews()
         styleSubviews()
     }
     
     func anchorSubviews() {
         
         addSubview(descriptionLabel)
-        descriptionLabel.edgesToSuperview(excluding: .bottom)
+        descriptionLabel.edgesToSuperview(excluding: .top)
         descriptionLabel.heightToSuperview(multiplier: 0.2)
-                
-        addSubview(countLabel)
-        countLabel.edgesToSuperview(excluding: .top)
-        countLabel.topToBottom(of: descriptionLabel)
+        
+        addSubview(imageView)
+        imageView.edgesToSuperview(excluding: .bottom)
+        imageView.bottomToTop(of: descriptionLabel, offset: -20)
+        
+        imageView.addSubview(countLabel)
+        //        countLabel.centerInSuperview()
+        countLabel.centerXToSuperview()
+        countLabel.centerYToSuperview(offset: offset)
         
     }
     
     
     func styleSubviews() {
+        imageView.contentMode = .scaleAspectFit
         
-        descriptionLabel.textColor = customRed
+        descriptionLabel.textColor = .white
         descriptionLabel.minimumScaleFactor = 0.1
         descriptionLabel.adjustsFontSizeToFitWidth = true
         descriptionLabel.lineBreakMode = .byClipping
