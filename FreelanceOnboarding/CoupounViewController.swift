@@ -28,26 +28,20 @@ class CouponViewController: UIViewController {
         view.addSubview(stackView)
         stackView.centerInSuperview()
         stackView.widthToSuperview(multiplier: 0.8)
-        stackView.heightToSuperview(multiplier: 0.7)
+        stackView.heightToSuperview(multiplier: 0.3)
         
         stackView.addArrangedSubview(numberOfCouponsLabelView)
         stackView.addArrangedSubview(numberOfArrivalsLabelView)
     }
     
     func styleSubviews() {
-        view.backgroundColor = customRed
+        view.backgroundColor = .white
         stackView.distribution = .fillEqually
         stackView.spacing = 10
         
-        numberOfCouponsLabelView.offset = -30
-        numberOfCouponsLabelView.anchorSubviews()
-        numberOfCouponsLabelView.imageView.image = #imageLiteral(resourceName: "CouponsFull")
         numberOfCouponsLabelView.descriptionLabel.text = "# Coupons"
-        numberOfArrivalsLabelView.countLabel.text = "3"
+        numberOfCouponsLabelView.countLabel.text = "3"
         
-        numberOfArrivalsLabelView.offset = 30
-        numberOfArrivalsLabelView.anchorSubviews()
-        numberOfArrivalsLabelView.imageView.image = #imageLiteral(resourceName: "LocationsFull")
         numberOfArrivalsLabelView.descriptionLabel.text = "# Arrivals"
         numberOfArrivalsLabelView.countLabel.text = "5"
     }
